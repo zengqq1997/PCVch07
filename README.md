@@ -310,7 +310,7 @@ cherrypy.quickstart(SearchDemo(), '/', config=os.path.join(os.path.dirname(__fil
 
 #### 遇到的问题
 
-1. 在安装cherrypy的时候，用pip install CherryPy命令行老是下载失败，直接下载包也是失败，不知道到底是什么原因，后来用国内的镜像下载就可以成功了pip install cherryPy -i ![img]pip install cherryPy -i https://pypi.tuna.tsinghua.edu.cn/simple
+1. 在安装cherrypy的时候，用pip install CherryPy命令行老是下载失败，直接下载包也是失败，不知道到底是什么原因，后来用国内的镜像下载就可以成功了pip install cherryPy -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 ​      ![img](https://github.com/zengqq1997/PCVch07/blob/master/error.jpg)
 
