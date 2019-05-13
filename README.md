@@ -8,7 +8,7 @@ python计算机视觉第七章实验
 
 - 需下载数据集[first1000](http://www.vis.uky.edu/~stewe/ukbench/)
 - 安装pysqlite（pip install pysqlite）
-- 安装CherryPy（pip install CherryPy）
+- 安装CherryPy（pip install cherryPy -i https://pypi.tuna.tsinghua.edu.cn/simple）
 
 ### 引言
 
@@ -64,7 +64,7 @@ with open('first1000/vocabulary.pkl', 'wb') as f:
 print ('vocabulary is:', voc.name, voc.nbr_words)
 ```
 
-**结果：**得到了一千张图像的SIFT特征数据并且生成了视觉词典vocabulary.pkl
+**结果**得到了一千张图像的SIFT特征数据并且生成了视觉词典vocabulary.pkl
 
 
 
@@ -108,7 +108,7 @@ print(con.execute('select count (filename) from imlist').fetchone())
 print(con.execute('select * from imlist').fetchone())
 ```
 
-**结果：**生成了testImaAdd.db数据库
+**结果**生成了testImaAdd.db数据库
 
 
 
@@ -186,7 +186,7 @@ imagesearch.plot_results(src,res_reg[:8]) #常规查询
 imagesearch.plot_results(src,res_geom[:8]) #重排后的结果
 ```
 
-**结果：**
+**结果**
 
 ![img](https://github.com/zengqq1997/PCVch07/blob/master/result3.jpg)
 
@@ -296,7 +296,7 @@ class SearchDemo:
 cherrypy.quickstart(SearchDemo(), '/', config=os.path.join(os.path.dirname(__file__), 'service.conf'))
 ```
 
-**结果：**
+**结果**
 
 ![img](https://github.com/zengqq1997/PCVch07/blob/master/result4.jpg)
 
